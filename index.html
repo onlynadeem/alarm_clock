@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ALARM CLOCK</title>
+  <link rel="icon" href="alarm_logo.jpg" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>ALARM CLOCK</header>
+  <main>
+    <div class="cursor"></div>
+    <h2>CURRENT TIME</h2>
+    <div class="time">
+      <div id="hour" class="padd">hours</div>
+      <div class="sm">:</div>
+      <div id="min" class="padd">min</div>
+      <div class="sm">:</div>
+      <div id="sec" class="padd">sec</div>
+      <div class="sm">:</div>
+      <div id="am_pm" class="padd">XX</div>
+    </div>
+    <div class="container">
+      <button id="btn" onclick="openPopup()">SET ALARM</button>
+      <div id="setAlarm"></div>
+    </div>
+    <div class="popup" id="popup">
+      <h3>SET TIME</h3>
+      <h5>HOUR</h5>
+      <input id="hour_input" type="text" value="00" />
+      <h5>MIN</h5>
+      <input id="minute_input" type="text" value="00" />
+      <button id="ok" onclick="closePopup()">OK</button>
+    </div>
+    <div class="popup2" id="popup2">
+      <h5>( ( ( RINGING ) ) )</h5>
+      <button id="close" onclick="audio_pause()">CLOSE</button>
+    </div>
+  </main>
+  <footer>
+    <div>@ALAM INDUSTRIES PVT. LTD.</div>
+  </footer>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
